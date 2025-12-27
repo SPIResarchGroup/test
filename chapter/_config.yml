@@ -1,0 +1,30 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: Korean Translation of the principle of Diffusion
+author: Wongi Park
+
+latex:
+  latex_documents:
+    targetname: book.tex
+
+execute:
+  execute_notebooks: off    
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/executablebooks/jupyter-book 
+
+html:
+  use_issues_button: true
+  use_repository_button: true
+
+exclude_patterns: [_build, .DS_Store, "**.ipynb_checkpoints"]
+
+
+sphinx:
+  extra_extensions:
+    - sphinxcontrib.bibtex
+
+bibtex_bibfiles:
+  - references.bib
